@@ -1,0 +1,23 @@
+#!/bin/sh
+#run_000324.bin
+
+cd $1
+
+#for xx in {1..81}
+#do
+#	printf -v FILESEED 'run_%06d.bin' $xx
+#	echo $FILESEED
+#	/home/drewkenjo/decode/bin2hist $FILESEED
+#done
+
+for FILESEED in `ls run*.bin`
+do
+	echo $FILESEED
+	/home/drewkenjo/decode/bin2hist $FILESEED
+done
+
+
+cd ../
+
+
+

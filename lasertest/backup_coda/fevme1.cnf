@@ -1,0 +1,59 @@
+FADC250_CRATE fevme1
+
+FADC250_SLOT all
+
+#default offset value
+FADC250_DAC  3100
+
+#default offset value override
+FADC250_SLOT 3
+FADC250_CH_DAC  0 300
+FADC250_CH_DAC  3 2500 #2000
+#FADC250_CH_DAC  4 500 # for simple sum64
+FADC250_CH_DAC  4 3000 # for maroc sum64
+FADC250_CH_DAC  5 500 #2000
+FADC250_CH_DAC  6 500 #2000
+FADC250_CH_DAC  7 500 #2000
+FADC250_CH_DAC  8 500 #2000
+FADC250_CH_DAC  9 3000 # for maroc sum64
+FADC250_CH_DAC  10 500 #2000
+FADC250_CH_DAC  11 500 #2000
+FADC250_CH_DAC  12 500 #2000
+FADC250_CH_DAC  13 500 #2000
+FADC250_SLOT all
+
+#when decreased, ADC pulse moves left
+
+# cosmic trigger
+#FADC250_W_OFFSET  1150 # Delay # 1150 seems is too small peaks sometimes are starting just at the beginning of the readout window
+#FADC250_W_OFFSET  1250 # Delay
+#FADC250_W_OFFSET   1000 # Delay for simple sum
+#FADC250_W_OFFSET   950 # Delay for maroc sum of laser run
+FADC250_W_OFFSET   1025 # Delay for maroc sum of injector run
+
+
+FADC250_W_WIDTH   192  # 192/4=48 time window
+#FADC250_W_WIDTH   384  # 284/4=96 time window
+
+#raw mode
+FADC250_MODE      1
+FADC250_NSB       12
+FADC250_NSA       24
+FADC250_NPEAK     1
+
+#pulse mode
+#FADC250_MODE      3
+#FADC250_NSB       20
+#FADC250_NSA       120
+#FADC250_NPEAK     3
+
+#       channel:  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+# FADC250_ADC_MASK  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0
+FADC250_ADC_MASK  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0
+#FADC250_ADC_MASK  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0
+FADC250_TRG_MASK  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+#zero threshold, pedestal file will be created
+FADC250_TET 0
+
+FADC250_CRATE end

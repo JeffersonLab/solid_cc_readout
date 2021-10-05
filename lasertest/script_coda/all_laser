@@ -1,0 +1,30 @@
+#!/bin/sh
+scp clasrun@clondaq4:/work/duke_data/fevme1_000$1.evio.* data/
+bin/trig_roottree data/fevme1_000$1
+
+#echo $2
+
+#if [$2 != -1]
+#then
+#   root -q -b -l "anafadc_marocsum.C($1,$2)"
+#else
+#   root -q -b -l "anafadc_marocsum.C($1)"
+##   echo "a is not equal to b"
+#fi
+
+root -q -b -l "anafadc_marocsum.C($1)"
+
+scp data/*$1.png zwzhao@jlabl1:www/userweb/maroc/plot
+
+root -q -b -l "analyzeRun_marocsum_injection.C($1)"
+
+#root -q -b -l "analyzeRun_marocsum_injection.C($1,2)"
+#mv data/fevme1_000$1.pdf data/fevme1_000$1_chip2.pdf
+
+#root -q -b -l "analyzeRun_marocsum_injection.C($1,1)"
+#mv data/fevme1_000$1.pdf data/fevme1_000$1_chip1.pdf
+
+scp data/*$1*.pdf zwzhao@jlabl1:www/userweb/maroc/plot
+
+
+

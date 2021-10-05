@@ -1,0 +1,2047 @@
+# ====2019/10/9 start testing MaPMT H12700 with SN# GA0194================================================================
+fevme1_000143.root
+726_728_729_2019_10_09_22_01
+sum of 8 pixels
+gain map, laser 50% 10kHz
+(bad map)
+
+fevme1_000145.root
+726_728_729_2019_10_09_22_11
+pixel 131
+gain map, laser 50% 10kHz
+(bad map)
+
+fevme1_000146.root
+726_728_729_2019_10_09_22_45
+sum of 8 pixels
+gain 64, laser 50% 10kHz
+
+fevme1_000147.root
+726_728_729_2019_10_09_23_22
+sum of 8 pixels
+gain 64, laser 20% 10kHz
+
+fevme1_000148.root
+726_728_729_2019_10_09_23_28
+sum of 8 pixels
+gain 64, laser 10% 10kHz
+
+# ====2019/10/10, change laser freq to 1khz to remove coda deadtime ===========
+
+fevme1_000150.root
+726_728_729_2019_10_10_17_04
+pixel=131
+gain 64, laser 50% 1kHz
+
+# ====2019/10/11 change LV to Topward to remove pedstal ocsalation beween two channels of CAEN ===========
+fevme1_000151.root
+726_728_729_2019_10_11_11_38
+pixel=131
+gain 64, laser 50% 1kHz W1
+(cut off at subtracted amplitude)
+
+fevme1_000152.root
+726_728_729_2019_10_11_12_11
+pixel=131
+gain 32, laser 50% 1kHz W1
+(no cut off at subtracted amplitude)
+
+fevme1_000153.root
+726_728_729_2019_10_11_13_07
+sum of 8 pixels
+gain 32, laser 50% 1kHz W1
+(cut off at subtracted amplitude)
+
+fevme1_000154.root
+726_728_729_2019_10_11_13_39
+sum of 8 pixels
+gain 8, laser 50% 1kHz W1
+(no cut off at subtracted amplitude)
+
+fevme1_000155.root
+726_728_729_2019_10_11_13_48
+sum of 8 pixels
+gain 16, laser 50% 1kHz W1
+(cut off at subtracted amplitude)
+
+fevme1_000156.root
+726_728_729_2019_10_11_16_36
+sum of 8 pixels
+gain 8, laser 50% 1kHz W6
+(see no light)
+
+fevme1_000161.root
+726_728_729_2019_10_11_18_29
+sum of 8 pixels
+gain 8, laser 50% 1kHz W3
+(see no light)
+
+fevme1_000162.root
+726_728_729_2019_10_11_18_37
+sum of 8 pixels
+gain 8, laser 50% 1kHz W2
+(see a little light)
+
+fevme1_000163.root
+726_728_729_2019_10_11_19_05
+sum of 8 pixels
+gain 8, laser 20% 1kHz W2
+
+fevme1_000164.root
+726_728_729_2019_10_11_19_13
+sum of 8 pixels
+gain 8, laser 50% 1kHz W1
+
+fevme1_000165.root
+726_728_729_2019_10_11_19_45
+sum of 8 pixels
+gain 8, laser 50% 1kHz W1
+
+fevme1_000170.root
+726_728_729_2019_10_13_22_00
+pixel=131
+gain 8, laser 50% 1kHz W2
+
+fevme1_000171.root
+726_728_729_2019_10_13_22_10
+pixel=131
+gain 32, laser 50% 1kHz W2
+
+
+# ====2019/10/15 add 10x amp,add another laser line with delay for trigger ===========
+
+fevme1_000176.root
+726_728_729_2019_10_15_15_06
+pixel=131
+gain 32, laser 50% 1kHz W1
+
+fevme1_000177.root
+726_728_729_2019_10_15_17_39
+pixel=131
+gain 64, laser 50% 1kHz W1
+(cut off at subtracted amplitude near 2000)
+
+fevme1_000178.root
+726_728_729_2019_10_15_20_45
+sum of 8 pixels
+gain 8, laser 50% 1kHz W1
+
+fevme1_000179.root
+726_728_729_2019_10_15_21_20
+sum of 8 pixels
+gain 16, laser 50% 1kHz W1
+(cut off at subtracted amplitude near 2000)
+
+fevme1_000180.root
+726_728_729_2019_10_15_21_25
+sum of 8 pixels
+gain 8, laser 50% 1kHz W2
+
+fevme1_000181.root
+726_728_729_2019_10_16_21_39
+sum of 8 pixels
+gain 16, laser 50% 1kHz W2
+
+fevme1_000182.root
+726_728_729_2019_10_16_21_49
+sum of 8 pixels
+gain 32, laser 50% 1kHz W2
+
+fevme1_000183.root
+726_728_729_2019_10_16_21_55
+sum of 8 pixels
+gain 64, laser 50% 1kHz W2
+(cut off at subtracted amplitude near 2000)
+
+fevme1_000184.root
+726_728_729_2019_10_16_22_10
+pixel=131
+gain 32, laser 50% 1kHz W2
+
+fevme1_000185.root
+726_728_729_2019_10_16_22_18
+pixel=131
+gain 64, laser 50% 1kHz W2
+(cut off at subtracted amplitude near 2000)
+
+fevme1_000186.root
+726_728_729_2019_10_17_23_11
+sum of 4, pixel=128,129,130,131
+gain 8, laser 50% 1kHz W1
+(HV off)
+
+fevme1_000187.root
+726_728_729_2019_10_17_23_19
+sum of 2, pixel=128,129
+gain 8, laser 50% 1kHz W1
+(HV off)
+
+fevme1_000188.root
+726_728_729_2019_10_17_23_27
+sum of 2, pixel=128,129
+gain 8, laser 50% 1kHz W1
+
+fevme1_000189.root
+726_728_729_2019_10_17_23_54
+sum of 4, pixel=128,129,130,131
+gain 8, laser 50% 1kHz W1
+
+fevme1_000190.root
+726_728_729_2019_10_18_00_02
+sum of 6, pixel=128,129,130,131,132,133
+gain 8, laser 50% 1kHz W1
+
+fevme1_000191.root
+726_728_729_2019_10_18_00_07
+pixel=131
+gain 8, laser 50% 1kHz W1
+
+fevme1_000192.root
+726_728_729_2019_10_18_00_15
+pixel=128
+gain 8, laser 50% 1kHz W1
+
+fevme1_000193.root
+726_728_729_2019_10_18_07_35
+sum of 3, pixel=128,129,130
+gain 8, laser 50% 1kHz W1
+
+fevme1_000194.root
+726_728_729_2019_10_18_07_47
+sum of 5, pixel=128,129,130,131,132
+gain 8, laser 50% 1kHz W1
+
+fevme1_000195.root
+726_728_729_2019_10_18_07_52
+sum of 7, pixel=128,129,130,131,132,133,134
+gain 8, laser 50% 1kHz W1
+(coda 75k events because disk run out)
+
+# ====2019/10/18 change laser from 50% to 20% =======================
+
+fevme1_000200.root
+726_728_729_2019_10_18_12_54
+sum of 8 pixels
+gain 8, laser 20% 1kHz W1
+
+fevme1_000201.root
+726_728_729_2019_10_18_14_44
+sum of 7, pixel=128,129,130,131,132,133,134
+gain 8, laser 20% 1kHz W1
+
+fevme1_000202.root
+726_728_729_2019_10_18_14_58
+sum of 6, pixel=128,129,130,131,132,133
+gain 8, laser 20% 1kHz W1
+
+fevme1_000203.root
+726_728_729_2019_10_18_15_05
+sum of 5, pixel=128,129,130,131,132
+gain 8, laser 20% 1kHz W1
+
+fevme1_000204.root
+726_728_729_2019_10_18_15_13
+sum of 4, pixel=128,129,130,131
+gain 8, laser 20% 1kHz W1
+
+fevme1_000205.root
+726_728_729_2019_10_18_15_18
+sum of 3, pixel=128,129,130
+gain 8, laser 20% 1kHz W1
+
+fevme1_000206.root
+726_728_729_2019_10_18_18_10
+sum of 2, pixel=128,129
+gain 8, laser 20% 1kHz W1
+
+fevme1_000207.root
+726_728_729_2019_10_18_18_17
+sum of 1, pixel=128
+gain 8, laser 20% 1kHz W1
+
+fevme1_000208.root
+726_728_729_2019_10_18_22_24
+sum of 8 pixel
+gain 8, laser 20% 1kHz W2
+
+fevme1_000209.root
+726_728_729_2019_10_19_18_58
+sum of 8 pixel
+gain 8, laser 20% 1kHz W1, HV 900
+
+fevme1_000211.root
+726_728_729_2019_10_19_22_27
+sum of 8 pixel
+gain 16, laser 20% 1kHz W1, HV 900
+
+fevme1_000212.root
+726_728_729_2019_10_19_22_43
+sum of 8 pixel
+gain 32, laser 20% 1kHz W1, HV 900
+(cut off at subtracted amplitude near 2000)
+
+fevme1_000213.root
+726_728_729_2019_10_19_22_51
+sum of 8 pixel
+gain 16, laser 20% 1kHz W1
+(cut off at subtracted amplitude near 2000)
+
+fevme1_000214.root
+726_728_729_2019_10_19_23_49
+sum of 8 pixel
+gain map (avg 64), laser 20% 1kHz W1
+(cut off at subtracted amplitude near 2000)
+(bad map)
+
+fevme1_000217.root
+726_728_729_2019_10_21_12_58
+sum of 8 pixel
+gain map (avg 8), laser 20% 1kHz W1
+(bad map)
+
+fevme1_000219.root
+726_728_729_2019_10_21_15_42
+sum of 8 pixel
+gain map (avg 8), laser 10% 1kHz W1
+(bad map)
+
+fevme1_000221.root
+726_728_729_2019_10_21_15_54
+sum of 8 pixel
+gain 8, laser 10% 1kHz W1
+
+fevme1_000222.root
+726_728_729_2019_10_21_17_01
+sum of 8 pixel
+gain 8, laser 20% 1kHz W1
+
+fevme1_000223.root
+726_728_729_2019_10_21_17_16
+sum of 1, pixel=128
+gain 8, laser 10% 1kHz W1
+
+fevme1_000225.root
+726_728_729_2019_10_22_14_49
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 750
+
+fevme1_000226.root
+726_728_729_2019_10_22_18_06
+sum of 8
+gain map (avg 64), laser 20% 1kHz W1, HV 750
+
+fevme1_000227.root
+726_728_729_2019_10_22_18_34
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 750
+
+fevme1_000228.root
+726_728_729_2019_10_22_18_46
+sum of 8
+gain map (avg 64), laser 20% 1kHz W1, HV 750
+
+fevme1_000229.root
+726_728_729_2019_10_23_11_39
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 650
+
+fevme1_000230.root
+726_728_729_2019_10_23_12_04
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 600
+
+fevme1_000231.root
+726_728_729_2019_10_23_13_13
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 600
+
+fevme1_000232.root
+726_728_729_2019_10_23_13_21
+sum of 8
+gain 32, laser 20% 1kHz W1, HV 600
+
+# ====2019/10/24 add 450ohm resistor in series with MAROC sum output.this,along with FADC 50ohm termination will divide signal by 10, ~10x NIM amp is bypassed  =======================
+
+fevme1_000234.root
+726_728_729_2019_10_24_15_20
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 1000
+(cut off at subtracted amplitude 170)
+
+fevme1_000235.root
+726_728_729_2019_10_24_16_01
+sum of 8
+gain 32, laser 20% 1kHz W1, HV 1000
+(cut off at subtracted amplitude 170)
+
+fevme1_000236.root
+726_728_729_2019_10_24_16_23
+sum of 8
+gain 16, laser 20% 1kHz W1, HV 1000
+
+fevme1_000237.root
+726_728_729_2019_10_24_16_47
+sum of 8
+gain 8, laser 20% 1kHz W1, HV 1000
+
+fevme1_000238.root
+726_728_729_2019_10_25_08_59
+sum of 8
+gain 128, laser 20% 1kHz W1, HV 750
+
+# ====2019/10/25 add 2kohm resistor in series with MAROC sum output.~10x NIM amp is bypassed  =======================
+
+fevme1_000239.root
+726_728_729_2019_10_25_12_45
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 1000
+(cut off at subtracted amplitude 120)
+
+fevme1_000240.root
+726_728_729_2019_10_25_12_59
+sum of 8
+gain 32, laser 20% 1kHz W1, HV 1000
+
+fevme1_000241.root
+726_728_729_2019_10_25_13_19
+sum of 8
+gain 64, laser 20% 1kHz W1, HV 900
+
+# ====2019/10/25 add onboard 0.5x amp, keep the  2kohm resistor but total impedance may be 3kohm now, sum of 64 with signal reversed which can be subtracted from 4095 ==========
+
+fevme1_000243.root
+726_728_729_2019_10_25_15_47
+sum of 8
+gain 32, laser 20% 1kHz W1, HV 1000
+
+fevme1_000245.root
+726_728_729_2019_10_25_16_14
+sum of 64
+gain 16, laser 20% 1kHz W1, HV 1000
+
+# ====2019/10/25 adjust LV from 4.75V to 5.3v so that the onboard amp works linearly ==========
+
+fevme1_000246.root
+726_728_729_2019_10_25_16_47
+sum of 64
+gain 16, laser 20% 1kHz W1, HV 1000
+
+fevme1_000248.root
+726_728_729_2019_10_25_17_14
+sum of 64
+gain 32, laser 20% 1kHz W1, HV 1000
+(cut off at fadc ampsub 3500)
+
+fevme1_000249.root
+726_728_729_2019_10_25_17_34
+sum of 64
+gain 64, laser 20% 1kHz W1, HV 850
+(cut off at fadc ampsub 3500)
+
+fevme1_000250.root
+726_728_729_2019_10_25_17_40
+sum of 64
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000251.root
+726_728_729_2019_10_25_17_57
+sum of 64
+gain map (avg 64), laser 20% 1kHz W1, HV 800
+
+fevme1_000252.root
+726_728_729_2019_10_25_18_11
+sum of 1, pixel=128
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000253.root
+726_728_729_2019_10_25_18_21
+sum of 1, pixel=128
+gain map at 8, laser 20% 1kHz W1, HV 800
+
+fevme1_000254.root
+726_728_729_2019_10_25_18_37
+sum of 1, pixel=128
+gain map at 128, laser 20% 1kHz W1, HV 800
+
+fevme1_000255.root
+726_728_729_2019_10_29_01_34
+sum of 64
+gain 128, laser 20% 1kHz W1, HV 800
+(adjust FADC DAC from 600 to 350, cut off ampsub 3800)
+
+fevme1_000256.root
+726_728_729_2019_10_29_01_53
+sum of 64
+gain 128, laser 20% 1kHz W1, HV 800
+(adjust FADC DAC from 600 to 300, cut off ampsub 3900)
+
+
+# ====2019/10/29 adjust fadc DAC from 600 to 300==========
+
+fevme1_000257.root
+726_728_729_2019_10_29_02_03
+sum of 64
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000258.root
+726_728_729_2019_10_29_02_15
+sum of 1, pixel=128
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000259.root
+726_728_729_2019_10_29_15_46
+sum of 64
+gain 64, laser 20% 1kHz W1, HV 800
+(1M events)
+
+fevme1_000260.root
+726_728_729_2019_10_29_16_35
+sum of 64
+gain map (avg 64), laser 20% 1kHz W1, HV 800
+
+fevme1_000261.root
+726_728_729_2019_10_29_16_45
+sum of 8,sum1
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000262.root
+726_728_729_2019_10_29_16_56
+sum of 8,sum2
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000263.root
+726_728_729_2019_10_29_17_05
+sum of 8,sum3
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000264.root
+726_728_729_2019_10_29_17_09
+sum of 8,sum4
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000265.root
+726_728_729_2019_10_29_17_14
+sum of 8,sum5
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000266.root
+726_728_729_2019_10_29_17_20
+sum of 8,sum6
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000267.root
+726_728_729_2019_10_29_17_25
+sum of 8,sum7
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000268.root
+726_728_729_2019_10_29_17_29
+sum of 8,sum8
+gain 64, laser 20% 1kHz W1, HV 800
+(somehow fadc and maroc daq don't match)
+
+fevme1_000269.root
+726_728_729_2019_10_29_17_35
+sum of 16,sum1+sum2
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000270.root
+726_728_729_2019_10_29_17_41
+sum of 16,sum3+sum4
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000271.root
+726_728_729_2019_10_29_17_46
+sum of 16,sum5+sum6
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000272.root
+726_728_729_2019_10_29_17_50
+sum of 16,sum7+sum8
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000273.root
+726_728_729_2019_10_29_17_55
+sum of 32,sum1+sum2+sum3+sum4
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000274.root
+726_728_729_2019_10_29_17_59
+sum of 32,sum5+sum6+sum7+sum8
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000275.root
+726_728_729_2019_10_30_09_43
+sum of 40,sum1+sum2+sum3+sum4+sum5
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000276.root
+726_728_729_2019_10_30_09_48
+sum of 48,sum1+sum2+sum3+sum4+sum5+sum6
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000277.root
+726_728_729_2019_10_30_09_53
+sum of 56,sum1+sum2+sum3+sum4+sum5+sum6+sum7
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000278.root
+726_728_729_2019_10_30_10_02
+sum of 24,sum1+sum2+sum3
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000279.root
+726_728_729_2019_10_30_10_09
+sum of 24,sum4+sum5+sum6
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000280.root
+726_728_729_2019_10_30_11_35
+sum of 40,sum1+sum2+sum3+sum4+sum5
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000282.root
+726_728_729_2019_10_30_11_42
+sum of 64
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000283.root
+726_728_729_2019_10_30_11_48
+sum of 64
+gain 32, laser 20% 1kHz W1, HV 800
+
+fevme1_000284.root
+726_728_729_2019_10_30_16_24
+sum of 56,sum1+...+sum7
+gain 64, laser 20% 1kHz W1, HV 800
+(1M events)
+
+fevme1_000285.root
+726_728_729_2019_10_30_16_52
+sum of 56,sum1+...+sum7
+gain map (avg 64), laser 20% 1kHz W1, HV 800
+(1M events)
+
+fevme1_000287.root
+726_728_729_2019_10_30_18_26
+sum of 56,sum1+...+sum7
+gain 64, laser 5% 1kHz W1, HV 800
+
+fevme1_000288.root
+726_728_729_2019_10_30_18_32
+sum of 56,sum1+...+sum7
+gain 64, laser 1% 1kHz W1, HV 800
+
+fevme1_000289.root
+726_728_729_2019_10_30_18_38
+sum of 56,sum1+...+sum7
+gain 64, laser 10% 1kHz W1, HV 800
+
+fevme1_000291.root
+726_728_729_2019_10_31_02_40
+sum of 56,sum1+...+sum7
+gain 64, laser 20% 1kHz W1, HV 800
+(10M events)
+
+# ====2019/11/01 adjust fadc buffer from TI_BLOCK_LEVEL from 1 to 10, TI_BUFFER_LEVEL from 1 to 10 in /usr/clas12/release/1.4.0/parms/ti/fevme1.cnf to increase coda rate beyond 1kHz =========
+
+fevme1_000292.root
+726_728_729_2019_11_01_16_09
+sum of 1, pixel=128
+gain 128, laser 20% 1kHz W1, HV 800
+(laser Int. Frequency 100kHz instead of 10kHz)
+
+fevme1_000293.root
+726_728_729_2019_11_01_16_14
+sum of 1, pixel=128
+gain 128, laser 20% 1kHz W1, HV 800
+
+# ====2019/11/01 change MAPMT to H12700-03 with SN# HA0053   =========
+
+fevme1_000294.root
+726_728_729_2019_11_01_18_52
+sum of 56
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000297.root
+726_728_729_2019_11_01_19_20
+sum of 56
+gain 64, laser 20% 1kHz W1, HV 800
+(trigger freq 5kHz, seems no deadtime)
+
+fevme1_000298.root
+726_728_729_2019_11_01_19_28
+sum of 56
+gain 64, laser 20% 1kHz W1, HV 800
+(1M events, trigger freq 5kHz, deadtime appear)
+
+# ====2019/11/01 change trigger freq from 1kHz to 2kHz with no deadtime=========
+
+fevme1_000299.root
+726_728_729_2019_11_01_19_44
+sum of 56
+gain 64, laser 20% 1kHz W1, HV 800
+(1M events)
+
+fevme1_000300.root
+726_728_729_2019_11_01_21_17
+sum of 56
+gain 64, laser 20% 1kHz W1, HV 800
+(10M events)
+
+fevme1_000301.root
+726_728_729_2019_11_01_21_41
+sum of 1, pixel=128
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000302.root
+726_728_729_2019_11_01_22_02
+sum of 1, pixel=128
+gain 128, laser 20% 1kHz W1, HV 800
+
+fevme1_000303.root
+726_728_729_2019_11_02_09_38
+sum of 8,sum1
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000304.root
+726_728_729_2019_11_02_09_45
+sum of 8,sum2
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000305.root
+726_728_729_2019_11_02_09_52
+sum of 16,sum1-2
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000306.root
+726_728_729_2019_11_02_09_57
+sum of 24,sum1-3
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000307.root
+726_728_729_2019_11_02_10_01
+sum of 32,sum1-4
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000308.root
+726_728_729_2019_11_02_10_04
+sum of 40,sum1-5
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000309.root
+726_728_729_2019_11_02_10_08
+sum of 48,sum1-6
+gain 64, laser 20% 1kHz W1, HV 800
+
+fevme1_000310.root
+726_728_729_2019_11_02_10_13
+sum of 56,sum1-7
+gain 64, laser 20% 1kHz W1, HV 800
+
+# ====2019/11/02 change to simple sum readout, using MAPMT H12700-03 with SN# HA0053 ========= 
+
+cable connect (sum61 1, dynode 1,quad1 1,quad2 1,quad3 1,quad4 1)
+
+fevme1_000314.root
+laser 20% 1kHz W1, HV 800
+(somehow not all trigger have laser light)
+
+fevme1_000316.root
+laser 20% 1kHz W1, HV 800
+(1M events)
+
+cable connect (sum61 1, dynode 0,quad1 1,quad2 1,quad3 1,quad4 1)
+
+fevme1_000317.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000318.root
+laser 20% 1kHz W1, HV 800
+(1M events)
+
+fevme1_000319.root
+laser 20% 1kHz W1, HV 800
+(1M events)
+
+cable connect (sum61 0, dynode 1,quad1 1,quad2 1,quad3 1,quad4 1)
+
+fevme1_000321.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000322.root
+laser 20% 1kHz W1, HV 800
+(1M events)
+
+cable connect (sum61 1, dynode 0,quad1 1,quad2 1,quad3 1,quad4 1)
+
+fevme1_000324.root
+laser 20% 1kHz W1, HV 800
+
+cable connect (sum61 0, dynode 1,quad1 1,quad2 1,quad3 1,quad4 1)
+
+fevme1_000325.root
+laser 20% 1kHz W1, HV 800
+
+cable connect (sum61 0, dynode 0,quad1 1,quad2 1,quad3 1,quad4 1)
+
+fevme1_000326.root
+laser 20% 1kHz W1, HV 800
+
+# ====2019/11/05 all 6 channels connected, cable connect (sum61 1, dynode 1,quad1 1,quad2 1,quad3 1,quad4 1) =========
+
+(change fadc DAC offset to allow fadc raw signal below baseline)
+
+fevme1_000327.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000329.root
+laser 20% 1kHz W3, HV 800
+
+(adjust fadc DAC offset slightly)
+
+fevme1_000330.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000331.root
+laser 20% 1kHz W2, HV 800
+
+fevme1_000332.root
+laser 20% 1kHz W3, HV 800
+
+fevme1_000334.root
+laser 20% 1kHz W1, HV 800
+(1M events)
+
+fevme1_000335.root
+laser 20% 1kHz W2, HV 800
+(1M events)
+
+fevme1_000336.root
+laser 20% 1kHz W3, HV 800
+(1M events)
+
+# ====2019/11/06 change all 6 downward resistors from 1000ohm to 100ohm, decouple dynode on board =========
+
+fevme1_000337.root
+laser 20% 1kHz W1, HV 800
+
+# ====2019/11/06 change fadc time window from 192ns to 384ns =========
+
+fevme1_000338.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000339.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000340.root
+laser 20% 1kHz W2, HV 800
+
+fevme1_000341.root
+laser 20% 1kHz W3, HV 800
+
+# ====2019/11/06 change all 6 downward resistors from 100ohm to 0ohm =========
+
+large noise appear from time to time
+
+fevme1_000343.root
+laser 20% 1kHz W1, HV 800
+good 
+
+fevme1_000345.root
+laser 20% 1kHz W2, HV 800
+bad 
+
+fevme1_000347.root
+laser 20% 1kHz W3, HV 800
+bad 
+
+fevme1_000349.root
+laser 20% 1kHz W1, HV 800
+bad
+
+fevme1_000350.root
+laser 20% 1kHz W1, HV 800
+good
+
+fevme1_000351.root
+laser 20% 1kHz W2, HV 800
+bad
+
+fevme1_000352.root
+laser 20% 1kHz W1, HV 800
+bad
+
+fevme1_000353.root
+laser 20% 1kHz W1, HV 800
+bad
+
+# ====2019/11/07 change all 6 downward resistors from 0ohm to 100ohm, reconnect dunode, AC coupling change from 0.1uF to 0.01uF, change fadc time window from 384ns back to 192ns=========
+
+fevme1_000354.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000355.root
+laser 20% 1kHz W2, HV 800
+
+fevme1_000356.root
+laser 20% 1kHz W3, HV 800
+
+laser 20% 1kHz W1, HV 800
+fevme1_000357.root (sum64 1, dynode 0,quad1 1,quad2 1,quad3 1,quad4 1)
+fevme1_000358.root (sum64 1, dynode 0,quad1 0,quad2 0,quad3 0,quad4 0)
+fevme1_000359.root (sum64 0, dynode 0,quad1 1,quad2 1,quad3 1,quad4 1)
+fevme1_000360.root (sum64 1, dynode 1,quad1 0,quad2 0,quad3 0,quad4 0)
+fevme1_000361.root (sum64 0, dynode 1,quad1 0,quad2 0,quad3 0,quad4 0)
+fevme1_000362.root (sum64 1, dynode 1,quad1 1,quad2 0,quad3 0,quad4 0)
+fevme1_000363.root (sum64 1, dynode 1,quad1 1,quad2 1,quad3 0,quad4 0)
+fevme1_000365.root (sum64 1, dynode 1,quad1 1,quad2 1,quad3 1,quad4 0)
+fevme1_000367.root (sum64 1, dynode 1,quad1 1,quad2 1,quad3 1,quad4 1)
+
+fevme1_000369.root
+laser 20% 1kHz W1, HV 800
+(pixel32 only)
+
+fevme1_000370.root
+laser 20% 1kHz W1, HV 1000
+(pixel32 only)
+
+fevme1_000371.root
+laser 20% 1kHz W1, HV 800
+(sum61 1, dynode 1,quad1 0,quad2 0,quad3 0,quad4 0) 4 quad have 50ohm terminator
+
+fevme1_000372.root
+laser 20% 1kHz W1, HV 800
+(sum61 1, dynode 0,quad1 0,quad2 0,quad3 0,quad4 0) dynoe and 4 quad have 50ohm terminator
+
+fevme1_000373.root
+laser 20% 1kHz W1, HV 800
+(sum61 1, dynode 1,quad1 0,quad2 0,quad3 0,quad4 0) 4 quad cable unpluged inside black box
+
+fevme1_000376.root
+laser 20% 1kHz W1, HV 1000  
+(pixel28 only)
+
+fevme1_000377.root
+laser 20% 1kHz W1, HV 1000  
+(pixel28 only)
+
+fevme1_000378.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000379.root
+laser 20% 1kHz W1, HV 1000
+(pixel8 only)
+
+fevme1_000382.root
+laser 20% 1kHz W1, HV 1000  
+(pixel1 only)
+
+fevme1_000383.root
+laser 20% 1kHz W1, HV 1000  
+(pixel57 only) (some missing events)
+
+fevme1_000384.root
+laser 20% 1kHz W1, HV 1000  
+(pixel57 only)
+
+fevme1_000385.root
+laser 20% 1kHz W1, HV 1000  
+(pixel64 only)
+
+fevme1_000386.root
+laser 20% 1kHz W1, HV 1000  
+(pixel64 only)
+
+fevme1_000387.root
+laser 20% 1kHz W1, HV 1000  
+(pixel37 only)
+
+fevme1_000388.root
+laser 20% 1kHz W1, HV 1000   
+(pixel37 only)
+
+fevme1_000389.root
+laser 20% 1kHz W1, HV 1000  
+(pixel28 only)
+
+fevme1_000390.root
+laser 20% 1kHz W1, HV 1000  
+(pixel28 only)
+
+# ====2019/11/07 change to maroc sum readout, using MAPMT H12700-03 with SN# HA0053 =========
+
+fevme1_000392.root
+726_728_729_2019_11_07_23_18
+sum of 56
+gain 64, laser 20% 1kHz W1, HV 800  
+(junk run with loose FPGA trigger cable)
+
+fevme1_000393.root
+726_728_729_2019_11_07_23_40
+sum of 1, pixel 32=maroc 48 (id 175)
+gain 64, laser 20% 1kHz W1, HV 1000  
+(junk run with loose FPGA trigger cable)
+
+fevme1_000393.root
+726_728_729_2019_11_07_23_48
+sum of 1, pixel 8=maroc 36 (id 163)
+gain 64, laser 20% 1kHz W1, HV 1000  
+(junk run with loose FPGA trigger cable)
+
+fevme1_000396.root
+726_728_729_2019_11_08_10_46
+sum of 56
+gain 64, laser 20% 1kHz W1, HV 800  
+
+fevme1_000397.root
+726_728_729_2019_11_08_12_21
+sum of 1, pixel 32=maroc 48 (id 175)
+gain 64, laser 20% 1kHz W1, HV 1000  
+
+fevme1_000398.root
+726_728_729_2019_11_08_12_27
+sum of 1, pixel 8=maroc 36 (id 163)
+gain 64, laser 20% 1kHz W1, HV 1000  
+
+fevme1_000399.root
+726_728_729_2019_11_08_12_32
+sum of 1, pixel 1=maroc 32 (id 159)
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+fevme1_000400.root
+726_728_729_2019_11_08_12_38
+sum of 1, pixel 57=maroc 4 (id 132)
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+fevme1_000401.root
+726_728_729_2019_11_08_12_42
+sum of 1, pixel 64=maroc 64 (id 191)
+gain 64, laser 20% 1kHz W1, HV 1000 
+(sum8 not connected)
+
+fevme1_000402.root
+726_728_729_2019_11_08_12_45
+sum of 1, pixel 37=maroc 49 (id 176)
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+fevme1_000403.root
+726_728_729_2019_11_08_12_49
+sum of 1, pixel 28=maroc 17 (id 144)
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+fevme1_000404.root
+726_728_729_2019_11_08_14_44
+sum of 56, pixel 1=maroc 32 (id 159) open
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+fevme1_000405.root
+726_728_729_2019_11_08_15_06
+sum of 56, pixel 57=maroc 4 (id 132) open
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+fevme1_000406.root
+726_728_729_2019_11_08_15_15
+sum of 56, pixel 8=maroc 36 (id 163) open
+gain 64, laser 20% 1kHz W1, HV 1000  
+
+fevme1_000407.root
+726_728_729_2019_11_08_15_24
+sum of 56, pixel 32=maroc 48 (id 175) open
+gain 64, laser 20% 1kHz W1, HV 1000  
+
+fevme1_000408.root
+726_728_729_2019_11_08_15_31
+sum of 56, pixel 37=maroc 49 (id 176) open
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+fevme1_000409.root
+726_728_729_2019_11_08_12_49
+sum of 56, pixel 28=maroc 17 (id 144) open
+gain 64, laser 20% 1kHz W1, HV 1000 
+
+# ====2019/11/21 change to simple sum readout, using MAPMT H12700-03 with SN# HA0053, Jack remove dynode output, change quad 1,2,4 and sum64, quad 3 remain same =========
+
+laser 20% 1kHz W1, HV 800
+fevme1_000424.root (sum64 1, dynode 0,quad1 1,quad2 1,quad3 1,quad4 1)
+fevme1_000426.root (sum64 1, dynode 0,quad1 1,quad2 1,quad3 1,quad4 1)  quad 3 and quad 4 fadc channel swapped
+
+laser 20% 1kHz W1, HV 1000  
+(pixel64 only)
+fevme1_000427.root 
+fevme1_000429.root           quad 3 and quad 4 fadc channel swapped
+
+# ====2019/11/22 change to simple sum readout, using MAPMT H12700-03 with SN# HA0053, Jack remove dynode output, quad4 shorted and quad1 has the shared amp, quad2 and sum64 has attenuated output 25% of previous, quad 3 remain same =========
+
+laser 20% 1kHz W1, HV 800
+fevme1_000431.root
+
+# ====2019/12/03 change to simple sum readout after Jack fix ringing ===========
+
+fevme1_000432.root
+laser 20% 1kHz W1, HV 800
+
+fevme1_000433.root
+laser 20% 1kHz W1, HV 800
+pixel 1 only
+
+fevme1_000434.root
+laser 20% 1kHz W1, HV 1000
+pixel 1 only
+
+fevme1_000435.root
+laser 20% 1kHz W1, HV 800
+pixel 8 only
+
+fevme1_000436.root
+laser 20% 1kHz W1, HV 1000
+pixel 8 only
+
+fevme1_000437.root
+laser 20% 1kHz W1, HV 800
+pixel 64 only
+
+fevme1_000438.root
+laser 20% 1kHz W1, HV 1000
+pixel 64 only
+
+fevme1_000439.root
+laser 20% 1kHz W1, HV 800
+pixel 57 only
+
+fevme1_000440.root
+laser 20% 1kHz W1, HV 1000
+pixel 57 only
+
+fevme1_000441.root
+laser 20% 1kHz W1, HV 800
+pixel 37 only
+
+fevme1_000442.root
+laser 20% 1kHz W1, HV 1000
+pixel 37 only
+
+fevme1_000443.root
+laser 20% 1kHz W1, HV 800
+pixel 28 only
+
+fevme1_000444.root
+laser 20% 1kHz W1, HV 1000
+pixel 28 only
+
+fevme1_000445.root
+laser 20% 1kHz W1, HV 800
+(1 million events)
+
+fevme1_000447.root
+laser 20% 1kHz W1, HV 1000
+(1 million events)
+
+
+
+fevme1_000448.root
+laser 20% 1kHz W1, HV 1000
+1 pixel open in each quadrant (pixels 1,8,57,64)
+
+
+
+# ====2019/12/04 take data with different number of pixels open (HV = 1kV) ===========
+
+
+fevme1_000449.root
+laser 20% 1kHz W1, HV 1000
+4 pixels open in quadrant 1 (pixels 1,2,9,10)
+
+fevme1_000450.root
+laser 20% 1kHz W1, HV 1000
+4 pixels open in quadrant 2 (pixels 7,8,15,16)
+
+fevme1_000451.root
+laser 20% 1kHz W1, HV 1000
+4 pixels open in quadrant 3 (pixels 55,56,63,64)
+
+fevme1_000452.root
+laser 20% 1kHz W1, HV 1000
+4 pixels open in quadrant 4 (pixels 49,50,57,58)
+
+
+fevme1_000453.root
+laser 20% 1kHz W1, HV 1000
+4 pixels open in quadrant 1 (pixels 1,2,9,10)
++ 
+4 pixels open in quadrant 3 (pixels 55,56,63,64)
+
+fevme1_000454.root
+laser 20% 1kHz W1, HV 1000
+4 pixels open in quadrant 2 (pixels 7,8,15,16)
++ 
+4 pixels open in quadrant 4 (pixels 49,50,57,58)
+
+
+fevme1_000455.root
+laser 20% 1kHz W1, HV 1000
+4 pixels open in quadrant 1 (pixels 1,2,9,10)
++ 
+4 pixels open in quadrant 2 (pixels 7,8,15,16)
++
+4 pixels open in quadrant 3 (pixels 55,56,63,64)
++ 
+4 pixels open in quadrant 4 (pixels 49,50,57,58)
+
+
+
+fevme1_000460.root
+laser 20% 1kHz W1, HV 1000
+9 pixels open in quadrant 2 (pixels 6,7,8,14,15,16,22,23,24)
++ 
+9 pixels open in quadrant 4 (pixels 41,42,43,49,50,51,57,58,59)
+
+fevme1_000461.root
+laser 20% 1kHz W1, HV 1000
+9 pixels open in quadrant 1 (pixels 1,2,3,9,10,11,17,18,19)
++ 
+9 pixels open in quadrant 3 (pixels 46,47,48,54,55,56,62,63,64)
+
+
+fevme1_000462.root
+laser 20% 1kHz W1, HV 1000
+9 pixels open in quadrant 2 (pixels 6,7,8,14,15,16,22,23,24)
++ 
+9 pixels open in quadrant 3 (pixels 46,47,48,54,55,56,62,63,64)
++ 
+9 pixels open in quadrant 4 (pixels 41,42,43,49,50,51,57,58,59)
+
+
+
+# ====2019/12/04 take data with different number of pixels open (HV = 0.8kV) ===========
+
+fevme1_000463.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 1 (pixels 1,2,3,9,10,11,17,18,19)
+
+fevme1_000464.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 2 (pixels 6,7,8,14,15,16,22,23,24)
+
+fevme1_000466.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 4 (pixels 46,47,48,54,55,56,62,63,64)
+
+fevme1_000467.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 3 (pixels 41,42,43,49,50,51,57,58,59)
+
+
+fevme1_000468.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 1 (pixels 1,2,3,9,10,11,17,18,19)
++
+9 pixels open in quadrant 3 (pixels 41,42,43,49,50,51,57,58,59)
+
+fevme1_000469.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 2 (pixels 6,7,8,14,15,16,22,23,24)
++ 
+9 pixels open in quadrant 4 (pixels 41,42,43,49,50,51,57,58,59)
+
+
+fevme1_000470.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 2 (pixels 6,7,8,14,15,16,22,23,24)
++ 
+9 pixels open in quadrant 3 (pixels 46,47,48,54,55,56,62,63,64)
++ 
+9 pixels open in quadrant 4 (pixels 41,42,43,49,50,51,57,58,59)
+
+
+fevme1_000471.root
+laser 20% 1kHz W1, HV 800
+9 pixels open in quadrant 1 (pixels 1,2,3,9,10,11,17,18,19)
++
+9 pixels open in quadrant 2 (pixels 6,7,8,14,15,16,22,23,24)
++ 
+9 pixels open in quadrant 3 (pixels 46,47,48,54,55,56,62,63,64)
++ 
+9 pixels open in quadrant 4 (pixels 41,42,43,49,50,51,57,58,59)
+
+
+# ====2019/12/12 maroc sum readout, using MAPMT H12700-03 SN# HA0053 =========
+
+fevme1_000480.root
+726_728_729_2019_12_12_20_16
+sum of 56
+gain 64, laser 20% 2kHz W1, HV 800  
+
+fevme1_000481.root
+726_728_729_2019_12_13_17_55
+sum of 56
+gain 64, laser 20% 2kHz W1, HV 800  
+
+fevme1_000482.root
+726_728_729_2019_12_13_18_51
+sum of 56, pixel 37=maroc 49 (id 176) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+
+fevme1_000483.root
+726_728_729_2019_12_13_19_06
+sum of 56, pixel 37=maroc 49 (id 176) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+fevme1_000484.root
+726_728_729_2019_12_13_19_48
+sum of 56, pixel 28=maroc 17 (id 144) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+fevme1_000485.root
+726_728_729_2019_12_13_21_15
+sum of 56, pixel 32=maroc 48 (id 175) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+fevme1_000487.root
+726_728_729_2019_12_13_22_13
+sum of 56, pixel 8=maroc 36 (id 163) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+fevme1_000488.root
+726_728_729_2019_12_13_22_34
+sum of 56, pixel 1=maroc 32 (id 159) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+# ====2019/12/13 maroc sum readout, using WLS coated MAPMT H12700-03 SN# HA0045 =========
+
+fevme1_000489.root
+726_728_729_2019_12_13_22_48
+sum of 56
+gain 64, laser 20% 2kHz W1, HV 800  
+
+fevme1_000490.root
+726_728_729_2019_12_13_23_05
+sum of 56, pixel 1=maroc 32 (id 159) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+fevme1_000491.root
+726_728_729_2019_12_13_23_23
+sum of 56, pixel 28=maroc 17 (id 144) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+fevme1_000492.root
+726_728_729_2019_12_14_00_00
+sum of 56, pixel 37=maroc 49 (id 176) open
+gain 64, laser 20% 2kHz W1, HV 1000  
+(1M events)
+
+#=========== 2020/01/23 Compare WLS Coated/Uncoated PMTs with UV LED ===========#
+
+Configuration:
+ 	Trigger Frequency: 500 Hz
+	Pulse Frequency (on function generator): 1000 Hz
+	Pulse Width: 16.8 ns
+	Lead Edge:    8.4 ns
+	Trail Edge:   8.4 ns
+	Voltage:      7.9 V
+	Output Load:  1 kOhm
+	ADC Hold (set in RUNME_duke.sh): 34 (272 ns)
+	
+	Gain: 64
+	HV:   1000 V
+	# Events: 250k
+
+
+
+MaPMT HA0045 (coated) Measurements:
+	1. All pixels open
+	726_728_729_2020_01_24_00_02
+	
+	2. Pixel  1 Open
+	726_728_729_2020_01_24_00_02
+	
+	3. Pixel 27 Open
+	726_728_729_2020_01_24_00_41
+	
+	4. Pixel 37 Open
+	726_728_729_2020_01_24_01_08
+
+
+MaPMT HA0053 (un-coated) Measurements:
+	1. All pixels open
+	726_728_729_2020_01_24_01_55
+	
+	2. Pixel 37 Open
+	726_728_729_2020_01_24_02_16
+	
+	3. Pixel 27 Open
+	726_728_729_2020_01_24_02_31
+	
+	4. Pixel  1 Open
+	726_728_729_2020_01_24_03_
+
+
+
+#=========== 2020/01/24 Test of 4x4 big simple Sum Board ===========#
+
+Note: When referring to the 4x4 sum board below, row 1 is the top row, row 4 is bottom (lv cable jack is at top of board).
+Column 1 is at the far left of the board (assuming you're at laser point's point of view looking into the pmts), column 4 is at far right.
+
+
+HA0053 Inserted in Row 2, Column 2
+fevme1_000519.root
+gain 64, laser 50% 2kHz W1, HV 1000  
+(250k events) Livetime: ~64%
+
+
+HA0053 Inserted in Row 2, Column 2
+fevme1_000520.root
+gain 64, laser 50% 2kHz W1, HV  800  
+(250k events) Livetime: ~44%
+
+
+-- Both of the above runs had siginificant dead time. On the RunControl gui, the ERFEVME1 roc kept giving the message:
+	"WARN: ER is backed up! This may be causing system deadtime."
+
+HA0053 Inserted in Row 2, Column 2
+fevme1_000521.root
+gain 64, laser 50% 1kHz W1, HV  800  
+(100k events) Livetime: ~90%
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000524.root
+gain 64, laser 50% 500Hz W1, HV  800  
+(25k events) Livetime: ~92%
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000531.root
+gain 64, laser 50% 1kHz W1, HV  1000
+(100k events) Livetime: ~100%
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000532.root
+gain 64, laser 50% 1kHz W1, HV  1000
+FADC250_CH_DAC  2000
+FADC250_W_OFFSET 1000
+FADC250_W_WIDTH   192
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000533.root
+gain 64, laser 50% 1kHz W1, HV  800
+FADC250_CH_DAC  1000
+FADC250_W_OFFSET 1000
+FADC250_W_WIDTH   192
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000534.root
+gain 64, laser 50% 1kHz W1, HV  800
+FADC250_CH_DAC  500
+FADC250_W_OFFSET 500
+FADC250_W_WIDTH   192
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000535.root
+gain 64, laser 50% 1kHz W1, HV  800
+FADC250_CH_DAC  500
+FADC250_W_OFFSET 900
+FADC250_W_WIDTH   192
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000536.root
+gain 64, laser 50% 1kHz W1, HV  800
+FADC250_CH_DAC  500
+FADC250_W_OFFSET 1000
+FADC250_W_WIDTH   384
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000537.root
+gain 64, laser 50% 1kHz W1, HV  800
+FADC250_CH_DAC  500 for all quad, 100 for sum64
+FADC250_W_OFFSET 1000
+FADC250_W_WIDTH   384
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000538.root
+gain 64, laser 50% 1kHz W1, HV  800
+FADC250_CH_DAC  500 for all quad, 3000 for sum64
+FADC250_W_OFFSET 1000
+FADC250_W_WIDTH   384
+
+HA0053 Inserted in Row 2, Column 1
+fevme1_000539.root
+gain 64, laser 50% 1kHz W1, HV  800
+FADC250_CH_DAC  500 for all quad, 2500 for sum64
+FADC250_W_OFFSET 1000
+FADC250_W_WIDTH   384
+
+Test of every slot on the 4x4 sum board.
+Configuration:
+	
+	FADC250_CH_DAC 500 for all quad, 2500 for sum64
+	FADC250_W_OFFSET 1000
+	FADC250_W_WIDTH   384
+	
+	gain:        64
+	wheel:        1
+	laser:      50%	
+	hv:       800 V
+	freq:   1.5 kHz
+	events:    250k
+	pmt:  HA0053 (uncoated)
+
+Runs:
+
+	Row1, Col1
+	fevme1_000543
+	laser position: (180, 0)
+	
+	Row1, Col2
+	fevme1_000544
+	laser position: (200, 0)
+		
+	Row1, Col3
+	fevme1_000545
+	laser position: (250, 0)
+		
+	Row1, Col4
+	fevme1_000546
+	laser position: (280, 0)
+	
+
+
+	Row2, Col1
+	fevme1_000550
+	laser position: (200, 65)
+	
+	Row2, Col2
+	fevme1_000549
+	laser position: (220, 65)
+	
+	Row2, Col3
+	fevme1_000548
+	laser position: (270, 65)
+	
+	Row2, Col4
+	fevme1_000547
+	laser position: (290, 65)
+	
+	
+
+	Row3, Col1
+	fevme1_000552
+	laser position: (200, 105)
+	
+	Row3, Col2
+	fevme1_000553
+	laser position: (220, 105)
+	
+	Row3, Col3
+	fevme1_000554
+	laser position: (270, 105)
+	
+	Row3, Col4
+	fevme1_000555
+	laser position: (300, 105)
+	
+	
+
+	Row4, Col1
+	fevme1_000559
+	laser position: (180, 150)
+	
+	Row4, Col2
+	fevme1_000558
+	laser position: (230, 150)
+	
+	Row4, Col3
+	fevme1_000557
+	laser position: (280, 150)
+	
+	Row4, Col4
+	fevme1_000556
+	laser position: (300, 150)
+	
+#=========== 2020/02/06 Test of 4x4 big simple Sum Board after ring fixed===========#
+
+FADC250_CH_DAC 500 for all quad, 2500 for sum64
+FADC250_W_OFFSET 1000
+FADC250_W_WIDTH   384
+
+HA0053 Inserted in Row 1, Column 1
+laser 50% 1kHz W1, HV  800
+fevme1_000562.root
+
+HA0053 Inserted in Row 2, Column 3
+laser 50% 1kHz W1,HV  800
+fevme1_000563.root	
+laser 50% 1kHz W1,HV  1000
+fevme1_000564.root
+
+Test of every slot on the 4x4 sum board.
+Configuration:
+	
+	FADC250_CH_DAC 500 for all quad, 2500 for sum64
+	FADC250_W_OFFSET 1000
+	FADC250_W_WIDTH   196
+
+	laser 50% 1.5kHz W1, HV 800
+	events:    300k
+	pmt:  HA0053 (uncoated)
+
+	Row2, Col3
+	fevme1_000567
+
+	Row1, Col1
+	fevme1_000568
+	Row1, Col2
+	fevme1_000570
+	Row1, Col3
+	fevme1_000572
+	Row1, Col4
+	fevme1_000574
+
+	Row1, Col4
+fevme1_000575
+laser 50% 1.5kHz W3, HV 800
+fevme1_000576
+laser 50% 1.5kHz W2, HV 800
+fevme1_000577
+laser 80% 1.5kHz W2, HV 800
+fevme1_000578
+laser 20% 1kHz W3, HV 800
+fevme1_000580
+laser 20% 1kHz W3, HV 1000
+fevme1_000581
+laser 20% 1kHz W3, HV 900
+fevme1_000582
+laser 20% 1.5kHz W3, HV 1000
+(1M events)
+
+#=========== 2020/02/07 Test of coated H12700-03 with maroc ===========#
+
+laser 50% 10kHz,HV 1000, gain64
+X=200 Y=25
+W1,W2,W3, 10M events ench
+
+MaPMT 12700-03 NOname 
+726_728_729_2020_02_07_20_42
+
+MaPMT 12700-03 SN HA0043
+726_728_729_2020_02_07_22_43
+
+MaPMT 12700-03 SN HA0057
+726_728_729_2020_02_08_02_09
+
+MaPMT 12700-03 SN HA0046
+726_728_729_2020_02_08_12_06
+
+
+
+#=========== 2020/02/07 Test of 4x4 big simple Sum Board after all 16 PMT mounted ===========#
+
+	FADC250_CH_DAC 500 for all quad, 2500 for sum64
+	FADC250_W_OFFSET 1000
+	FADC250_W_WIDTH   196
+
+	laser X=200 Y=25
+	laser 20% 1.5kHz W3, HV 1000
+	events:    300k
+
+	Row1, Col1, HA0028
+	fevme1_000584
+	Row1, Col2, HA0027
+	fevme1_000588
+	Row1, Col3, HA0059
+	fevme1_000589
+	Row1, Col4, HA0037
+	fevme1_000591
+
+	Row2, Col1, HA0063
+	fevme1_000592
+	Row2, Col2, HA0064
+	fevme1_000593
+	Row2, Col3, HA0044
+	fevme1_000595
+	Row2, Col4, HA0062
+	fevme1_000597
+
+	Row3, Col1, HA0070
+	fevme1_000600
+	Row3, Col2, HA0011
+	fevme1_000601
+	Row3, Col3, HA0045
+	fevme1_000602
+	Row3, Col4, HA0043
+	fevme1_000604
+
+	Row4, Col1, HA0058
+	fevme1_000605
+	Row4, Col2, HA0057
+	fevme1_000606
+	Row4, Col3, HA0046
+	fevme1_000607
+	Row4, Col4, Noname
+	fevme1_000609
+
+#=========== 2020/07/07 Test of maroc sum board (2498_2500_2499) with MAPMT H12700-03 (SN# HA0053) at chip id 2 (2499,inner) =========#
+
+fevme1_000639.root
+726_728_729_2020_07_07_21_32
+gain 64, laser 50% 1kHz W1, HV 1000  
+(1M events)
+
+fevme1_000640.root
+726_728_729_2020_07_07_23_36
+gain 64, laser 50% 1kHz W2, HV 1000, no reflection ball
+
+fevme1_000644.root
+726_728_729_2020_07_08_12_02
+gain 64, laser 10% 1kHz W1, HV 1000, no reflection ball 
+FADC250_W_OFFSET  1100 # Delay for maroc sum
+FADC250_W_WIDTH   384  # 284/4=96 time window
+
+***  change to FADC250_W_OFFSET  950 # Delay for maroc sum, FADC250_W_WIDTH   192  # 192/4=48 time window    ********************
+
+fevme1_000645.root
+726_728_729_2020_07_08_13_23
+gain 64, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 0.5V
+(1M events)
+
+fevme1_000647.root
+726_728_729_2020_07_08_16_35
+gain 64, laser 50% 1kHz W2, HV 1000, no reflection ball
+fadc limit 0.5V
+(too much light)
+
+fevme1_000648.root
+726_728_729_2020_07_08_19_55
+gain 64, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 0.5V
+(10M events)  there are deadtime in coda
+
+fevme1_000649.root
+726_728_729_2020_07_08_23_59
+gain 64, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 0.5V
+(10M events)  there are deadtime in coda
+
+fevme1_000651.root
+726_728_729_2020_07_09_02_31
+gain 64, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 0.5V
+(5M events)  
+
+fevme1_000652.root
+726_728_729_2020_07_09_05_23
+gain 64, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 0.5V
+(5M events)  
+
+fevme1_000653.root
+726_728_729_2020_07_09_12_29
+gain 64, laser 50% 1kHz W4, HV 1000, no reflection ball
+fadc limit 0.5V
+
+fevme1_000657.root
+726_728_729_2020_07_09_16_23
+gain 64, laser 50% 1kHz W4, HV 1000, no reflection ball
+fadc limit 0.5V
+(1M events)  there are deadtime in coda
+
+fevme1_000660.root
+726_728_729_2020_07_09_19_10
+gain 32, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 0.5V
+(1M events)
+
+fevme1_000662.root
+726_728_729_2020_07_09_22_36
+gain 64, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 1V
+(1M events)
+
+fevme1_000663.root
+726_728_729_2020_07_09_23_39
+gain 32, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 1V
+(1M events)
+
+fevme1_000665.root
+726_728_729_2020_07_10_01_48
+gain 16, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 1V
+(1M events)
+
+fevme1_000666.root
+726_728_729_2020_07_10_08_43
+gain 128, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 1V
+(1M events)
+
+fevme1_000667.root
+726_728_729_2020_07_10_13_01
+gain 8, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 1V
+(1M events)
+
+fevme1_000668.root
+726_728_729_2020_07_10_13_25
+gain 4, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 1V
+(1M events)
+
+fevme1_000670.root
+726_728_729_2020_07_10_15_28
+gain 24, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 1V
+(1M events)
+
+fevme1_000672.root
+726_728_729_2020_07_10_17_52
+gain 64, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 2V
+(1M events)
+
+fevme1_000673.root
+726_728_729_2020_07_10_18_15
+gain 24, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 2V
+(1M events)
+
+fevme1_000674.root
+726_728_729_2020_07_10_18_53
+gain 32, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 2V
+(1M events)
+
+fevme1_000676.root
+726_728_729_2020_07_10_21_10
+gain 16, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 2V
+(1M events)
+
+fevme1_000677.root
+726_728_729_2020_07_10_21_46
+gain 8, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 2V
+(1M events)
+
+fevme1_000678.root
+726_728_729_2020_07_10_22_40
+gain 4, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 2V
+(1M events)
+
+fevme1_000679.root
+726_728_729_2020_07_10_23_16
+gain 128, laser 50% 1kHz W3, HV 1000, no reflection ball
+fadc limit 2V
+(1M events)
+
+fevme1_000688.root
+726_728_729_2020_07_12_22_41
+gain 64, laser 20% 1kHz W2, HV 1000, no reflection ball and one page paper filter 
+fadc limit 2V
+
+fevme1_000689.root
+726_728_729_2020_07_12_22_57
+gain 64, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+
+fevme1_000690.root
+726_728_729_2020_07_12_23_18
+gain 16, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+
+fevme1_000691.root
+726_728_729_2020_07_12_23_47
+gain 64, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000692.root
+726_728_729_2020_07_13_00_22
+gain 32, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000694.root
+726_728_729_2020_07_13_01_13
+gain 24, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000696.root
+726_728_729_2020_07_13_01_58
+gain 16, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000697.root
+726_728_729_2020_07_13_02_18
+gain 8, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000698.root
+726_728_729_2020_07_13_11_39
+gain 48, laser 20% 1kHz W2, HV 800, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000700.root
+726_728_729_2020_07_13_12_09
+gain 48, laser 20% 1kHz W3, HV 1000, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000701.root
+726_728_729_2020_07_13_12_28
+gain 64, laser 20% 1kHz W3, HV 1000, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000702.root
+726_728_729_2020_07_13_12_54
+gain 32, laser 20% 1kHz W3, HV 1000, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000703.root
+726_728_729_2020_07_13_13_31
+gain 24, laser 20% 1kHz W3, HV 1000, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000710.root
+726_728_729_2020_07_13_20_39
+gain 24, laser 20% 1kHz W2, HV 900, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000711.root
+726_728_729_2020_07_13_21_15
+gain 24, laser 20% 1kHz W2, HV 850, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+fevme1_000712.root
+726_728_729_2020_07_13_21_39
+gain 24, laser 20% 1kHz W3, HV 950, no reflection ball and one page paper filter 
+fadc limit 2V
+(1M events)
+
+
+=== injection test  ===============================================================
+
+test with chip2 only ***************************************************
+
+726_728_729_2020_07_13_16_19   gain 64,delay 3, pixel0,64,128
+726_728_729_2020_07_13_16_22   gain 64,delay 2, pixel0,64,128
+726_728_729_2020_07_13_16_27   gain 64,delay 4, pixel0,64,128  
+726_728_729_2020_07_13_16_34   gain 64,delay 5, pixel0,64,128 
+
+fevme1_000707.root
+726_728_729_2020_07_13_19_33
+gain 64, 1kHz, delay 3, pixel128, `seq 50 500 4050`
+
+fevme1_000713.root
+726_728_729_2020_07_13_22_23
+gain 64, 1kHz, delay 3, amp in `seq 50 500 4050`, chan in `seq 0 63`
+
+fevme1_000714.root
+726_728_729_2020_07_13_23_38
+gain 64, 1kHz, delay 3, amp in `seq 50 500 4050`, chan in `seq 0 63`
+(576613)
+
+fevme1_000715.root
+726_728_729_2020_07_13_23_48
+gain 64, 1kHz, delay 3, amp in `seq 50 4000 4050`, chan in `seq 0 63`
+(128143)
+
+fevme1_000716.root
+726_728_729_2020_07_13_23_56
+gain 64, 1kHz, delay 3, amp in 4000, chan in `seq 0 63`
+(64073)
+
+fevme1_000717.root
+726_728_729_2020_07_14_00_04
+gain 64, 1kHz, delay 3, amp in 1000, chan in `seq 0 63`
+(64073)
+
+testing all pixels  ........................................................
+1kHz, delay 3,  chan in `seq a b` and amp in `seq 50 4000 4050`
+fadc limit 2V
+(72083=2+9000+(10+9000)*7+11)
+
+chan in `seq 0 7`
+	gain 64		fevme1_000743.root	726_728_729_2020_07_14_02_29
+	gain 32		fevme1_000745.root	726_728_729_2020_07_14_03_48
+	gain 24		fevme1_000746.root	726_728_729_2020_07_14_04_12
+chan in `seq 8 15`
+	gain 64		fevme1_000747.root	726_728_729_2020_07_14_04_21
+	gain 32		fevme1_000748.root	726_728_729_2020_07_14_04_37
+	gain 24		fevme1_000749.root	726_728_729_2020_07_14_04_55
+chan in `seq 16 23`
+	gain 64		fevme1_000750.root	726_728_729_2020_07_14_09_31
+	gain 32		fevme1_000751.root	726_728_729_2020_07_14_09_46
+	gain 24		fevme1_000752.root	726_728_729_2020_07_14_09_59
+chan in `seq 24 31`(TRich_frontend match)
+	gain 64		fevme1_000757.root	726_728_729_2020_07_14_11_48
+	gain 32		fevme1_000759.root	726_728_729_2020_07_14_12_11
+	gain 24		fevme1_000760.root	726_728_729_2020_07_14_12_19
+
+test with chip2 and chip1 ***************************************************
+
+all chip2 channeles have fadc limit 2V
+all chip1 channeles have fadc limit 0.5V
+
+fevme1_000763.root
+726_728_729_2020_07_14_14_04
+gain 64, 1kHz, delay 3, amp in 1000, chan in 24 and amp in `seq 50 4000 4050`
+TRich_frontend sum 24-31
+
+testing all pixels  ........................................................
+1kHz, delay 3,  chan in `seq a b` and amp in `seq 50 4000 4050`
+TRich_frontend sum match
+(72083=2+9000+(10+9000)*7+11)
+
+chan in `seq 0 7`
+	gain 32		fevme1_000770.root	726_728_729_2020_07_14_17_41
+	gain 24		fevme1_000771.root	726_728_729_2020_07_14_17_51
+	gain 16		fevme1_000772.root	726_728_729_2020_07_14_18_13
+chan in `seq 8 15`
+	gain 32		fevme1_000775.root	726_728_729_2020_07_14_18_35
+	gain 24		fevme1_000776.root	726_728_729_2020_07_14_18_42
+	gain 16		fevme1_000777.root	726_728_729_2020_07_14_18_49	
+chan in `seq 16 23`
+	gain 32		fevme1_000778.root	726_728_729_2020_07_14_19_00
+	gain 24		fevme1_000779.root	726_728_729_2020_07_14_19_09
+	gain 16		fevme1_000780.root	726_728_729_2020_07_14_19_18
+chan in `seq 24 31`
+	gain 32		fevme1_000781.root	726_728_729_2020_07_14_19_28
+	gain 24		fevme1_000782.root	726_728_729_2020_07_14_19_35
+	gain 16		fevme1_000783.root	726_728_729_2020_07_14_19_42
+chan in `seq 32 39`
+	gain 32		fevme1_000784.root	726_728_729_2020_07_14_19_52
+	gain 24		fevme1_000785.root	726_728_729_2020_07_14_20_02
+	gain 16		fevme1_000786.root	726_728_729_2020_07_14_21_29
+chan in `seq 40 47`
+	gain 32		fevme1_000787.root	726_728_729_2020_07_14_21_40
+	gain 24		fevme1_000789.root	726_728_729_2020_07_14_22_06
+	gain 16		fevme1_000791.root	726_728_729_2020_07_14_22_22
+chan in `seq 48 55`
+	gain 32		fevme1_000792.root	726_728_729_2020_07_14_22_35
+	gain 24		fevme1_000793.root	726_728_729_2020_07_14_22_49
+	gain 16		fevme1_000794.root	726_728_729_2020_07_14_22_57
+chan in `seq 56 63`
+	gain 32		fevme1_000795.root	726_728_729_2020_07_14_23_11
+	gain 24		fevme1_000797.root	726_728_729_2020_07_14_23_25
+	gain 16		fevme1_000798.root	726_728_729_2020_07_14_23_32
+
+
+
+

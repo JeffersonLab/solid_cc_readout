@@ -1,0 +1,266 @@
+=== data backup location ============================================================================
+
+CODA data /work/halla/solid/cc_pro/lasertest/data
+
+RICH data /work/halla/solid/cc_pro/lasertest/tile
+
+========= coda DAQ ===================================================================
+
+run coda on fevme1 with roc on fevme1
+1) ssh clasrun@fevme1 (fevme1 is the computer on the vme crate)
+2) killcoda
+3) runcontrol -rocs 
+4) Connect, Configure->fevme1, click "rocs" view on top right
+5) Download->/usr/clas12/release/1.4.0/parms/trigger/clasrun.trg
+6) Prestart
+7) Go
+8) End run
+9) Abort
+
+coda rerun only need prestart->go if no config change
+
+coda rerun only need download->prestart->go  if config change
+
+ssh clasrun@clondaq4
+diaggui $CODA/src/diaggui/config/fevme1.txt 
+click "Ch SCope", choose "ch 1 > 1000 and ch 2 < 500" as trigger by clicking on channel name
+choose "AdcParameters" -> "Dac" to change value
+right click on plot to select position to read value
+
+Data will be recorded on clondaq6:/work/duke_data/fevme1_######.evio.#####
+
+(old Data will be recorded on clondaq4:/data/stage_in/fevme1_######.evio.##### 
+because coda mix-use fevme1 and clondaq4 for its large mem)
+
+FADC configuration: (where to adjust FADC time window, offset and range, threshold etc)
+   $CLON_PARMS/fadc250/fevme1.cnf
+
+TI configuration (probably don't need to touch this file):
+   $CLON_PARMS/ti/fevme1.cnf
+
+======= coda analysis ===================================================================
+
+# copy data
+ssh clasrun@clondaq4
+scp /work/duke_data/fevme1_000141.evio.00000 zwzhao@braydopc2:Projects/clas12_trigger_report/data
+or 
+ssh -XY zwzhao@braydopc2
+cd /home/zwzhao/Projects/
+scp clasrun@clondaq4:/work/duke_data/fevme1_000141.evio.00000 data/
+
+# decode evio to root  (using root 6.12.06) 
+ssh -XY zwzhao@braydopc2
+cd /home/zwzhao/Projects/
+clas12_trigger_report/bin/trig_roottree data/fevme1_000141
+
+# data backup
+scp data/fevme1_00064*root zwzhao@jlabl1:/work/halla/solid/cc_pro/lasertest/data
+
+# analyse root file (this works on any computer)
+cd script_coda
+ln -s /home/zwzhao/Projects/data data
+root -q -b -l 'anafadc_simplesum.C(161)'  	plot all events of run 161 for simple sum
+root -q -b -l 'anafadc_simplesum.C(161,10)'	plot event #10 of run 161 for simple sum
+root -q -b -l 'anafadc_marocsum.C(161)'   	plot all events of run 161 for maroc sum
+root -q -b -l 'anafadc_marocsum.C(161,10)'	plot event #10 of run 161 for maroc sum
+
+root -q -b -l 'analyzeRun_simplesum.C(161)'	make more plots for simple sum
+root -q -b -l 'analyzeRun_marocsum.C(161)'	make more plots for maroc sum
+root -q -b -l 'analyzeRun_marocsumtest.C(161)'	make more plots for maroc sum test
+root -q -b -l 'analyzeRun_marocsum_injection.C(161)'	make more plots for maroc sum using injection
+
+resulting root tree structure
+T->Scan("wave_n:wave_roc:wave_slot:wave_ch:wave_thr:wave_ped:wave_nsamples:wave")
+
+# copy result
+scp data/*161.png zwzhao@ifarm:www/SoLID/download/cc_pro/lasertest/plot
+scp data/*161.pdf zwzhao@ifarm:www/SoLID/download/cc_pro/lasertest/plot
+
+cable connection before 2020/07/07, when testing maroc sum test board and simple sum board
+fadc 0, maroc sum at 0.5V 
+fadc 1, laser signal at 2V
+fadc 2, laser signal with delay at 0.5V
+fadc 3, simple sum 64 at 0.5V     (green cable)
+fadc 4, simple sum dynode at 0.5V (black cable) 
+fadc 5, simple sum Quad1 at 0.5V (white cable 03)
+fadc 6, simple sum Quad2 at 0.5V (white cable 04)
+fadc 7, simple sum Quad3 at 0.5V (white cable 05)
+fadc 8, simple sum Quad4 at 0.5V (white cable 06)
+and
+maroc sum test board signal is positive (so it need flip by 4095-fadc_value because fadc needs negtive)
+simple sum board: sum64 and dynode is negative(no flip needed), all 4 quad are positive (need flip)
+
+cable connection after 2020/07/07, when testing maroc sum production board
+fadc 0, empty
+fadc 1, laser signal at 2V
+fadc 2, laser signal with delay at 0.5V
+fadc 3, empty    (green cable)
+fadc 4, chip 2, maroc sum64  (black cable) 
+fadc 5, chip 2, maroc Quad1  (white cable 03)
+fadc 6, chip 2, maroc Quad2  (white cable 04)
+fadc 7, chip 2, maroc Quad3  (white cable 05)
+fadc 8, chip 2, maroc Quad4  (white cable 06)
+fadc 9, chip 1, maroc sum64 
+fadc 10, chip 1, maroc Quad1
+fadc 11, chip 1, maroc Quad2
+fadc 12, chip 1, maroc Quad3
+fadc 13, chip 1, maroc Quad4
+and 
+maroc sum64 signal is negative (no flip needed), all quad are positive (need flip)
+
+=========RICH DAQ =============================================================
+rich@rich.jlab.org
+
+working dir
+/home/rich/LaserTED/swFE/
+
+Source code to change sum pixel
+modify src/TRich_Frontend.cpp
+--------------------------------------------
+			//MAROC_id (i+1) refer to https://clasweb.jlab.org/wiki/images/4/46/Maroc_ch.pdf
+	    //regs->CH[i>>1].bits.Sum0 = 1;  //sum all odd MAROC_id 
+      //regs->CH[i>>1].bits.Sum0 = (i<8)?1:0; //BR, was 0 // sum odd MAROC_id 1-8
+      regs->CH[i>>1].bits.Sum0 = (i<4)?1:0; //BR, was 0 // sum odd MAROC_id 1-4
+      //regs->CH[i>>1].bits.Sum0 = (i==3)?1:0;  //BR, was 0 // only MAROC_id 4
+--------------------------------------------
+make
+
+how to take laser run data
+hvon   (wait for 2 mins)
+cd bin
+./RUNME_duke.sh
+hvoff
+
+hvstatus (will show voltage in V and current in uA, if a line is disconnected,voltage is none-zero but current is zero)
+hvoff
+hvon (default 1000V) 
+hvon 900 (turn all 3 HV to 900V)
+lvstatus
+lvoff
+lvon
+
+FPGA needs 5-5.5V LV, need to measure it when plugin at connector to make sure it is above 5V after voltage drop by cable
+Don't unplug LV when power on, it will trigger CAEN V power supply
+CAEN LV powersupply is noisy, use a tabletop powersupply to avoid it.
+Set tabletop powersupply current limi to 1A for 1 FAPG board.
+
+if HV/LV is not response, 
+1. it can be powersupply problem, check server using "caengeco" on clondaq4, connect to ip from "host hvrich0". If unplug LV connector when LV on, it will trip them and has to clear the trip using caengeco to clear alarm before it can be turned on again
+2. it can be ioc problem, run "clascss" on clasrun@clonsl1, click RICH->"EXPERT ONLY:HVRICH0 Slot 11, HV A1536", If "status" show red, do "control"->"reboot ioccaenhv_HVRICH0"
+3. alternative to 2, in clascss, IOCs->IOC Health->Detectors and then see ioccaen_HVRICH0 with options near the bottom,then "reboot"
+
+Both top and bottom rack use a "T" to connect to laser trigger cable.
+If Laser red "on" button on control box is not flashing, it means it's not triggered. check the trigger cable!
+
+RICH laser max freq 1Mhz even though the model can go 120mhz
+
+Laser has to trigger on rising edge as shown on its display! NOT falling edge! otherwise, there is some micro second delay and maroc adc using slow shaper see NO signal
+
+(the commend below only works if interlock is green and they work for both external trigger and internal trigger)
+any of the three commands without option show laser status
+laser_intense 10 # change laser intensity to 10% (it accepts from 10 to 90 with steps in 10) when "tune" is set as manual instead of auto
+(run laser_intense to confirm status)
+laser_fr 250 # change laser freq to 250khz, any number > 1000 will set laser to max 1000khz
+(run laser_fr to confirm status)
+laser 0 # turn laser off
+laser 1 # turn laser on
+(run laser to confirm status)
+When at interal trigger setting, the internal clock TTL is always on no matter laser on or off and interlock green or red.
+
+lts_run 250 50  (move laser to X=250,Y=25 position, align with top row middle slot)
+
+wheel (show current filter status)
+wheel 3 (change wheel to 3)
+
+config in bin/RUNME.cfg
+
+convert data to root file
+cd tile/726_728_729_2019_10_09_15_15  (top row)
+decodeFE run_000001.bin
+bin2hist run_000001.bin
+
+# data backup
+scp -rp tile/726_728_729_2019_12_* zwzhao@jlabl1:/work/halla/solid/cc_pro/lasertest/tile
+
+how to take injection run data   
+cd bin
+./RUNME_injector_duke.sh
+
+For injection run, remove PMT or keep HV off
+FPGA is used to input fix amount of charge, both maroc pixel by rich daq and maroc sum signal by fadc and coda can be tested
+laser control box is still connected and responds to trigger by FPGA, but laser light is not on, thus interlock or HV is not need)
+
+To take choose delay which give max output signal to test
+Inject a amplitude (fix amount of charge) into 1 pixel a time and the output is saved into 1 file in RICH daq.
+To record maroc sum with fadc and coda with controlled dead events, use 1khz trigger and do 1 group of 8 pixels at once.
+loop through all charge choices and then all pixels.
+Fo example, loop through 8 (0-7) pixels with 9 amp (50-4050 with 500 step) with 1000 events at each settting will have 72 setting
+Coda has 2 dead events at very beginning, then 9000 events with no dead events, then 10 dead events when chaning pixel every time, then 11 dead events when click "end run" button
+So total events are 72083=2+9000*8+10*7+11
+
+============ other note ================================================================
+
+safety training
+https://userweb.jlab.org/~zwzhao/maroc/SAF158_safety_training.pdf
+https://www.jlab.org/div_dept/train/RICH/RICH%20Laser.pdf
+
+HV and laser are interlocked with the black box door electromagnet through interlock control box 
+
+laser can only be turned on when interlock is on and will be killed when interlock go from on to off
+
+However, HV can be on even when interlock is off!
+interlock from off to on doesn't change HV status and HV is killed only interlock go from on to off!
+HV needs some time to drop to 0 even when killed
+
+filter and diffsuer log
+https://logbooks.jlab.org/entry/3331345
+The big sphere is an addtional way to reduce light
+
+PMT_id or chip_id shown on top left of
+https://clasweb.jlab.org/wiki/images/b/b9/Mapmt_ID_and_orientation.pdf
+for 3-PMT board, the one near HV is id 0
+so in the test setup, most inner one has pmt_id or chip id 2
+
+pixel_id and maroc_id are shown at 
+https://clasweb.jlab.org/wiki/images/4/46/Maroc_ch.pdf
+Ben did sum connection for bottom left 8 pixels with 
+pixel_id 49,50,51,52,57,58,59,60 and 
+maroc id  8, 6, 7, 5, 4, 2, 3, 1
+then he did it for all pixels
+
+maroc daq has output with id = pmt_id*64 + (maroc_id - 1)
+so the most bottom left pixel has id 2*64+(4-1)=131
+
+H12700 with serial number GA0194 gain balance, see "scale" on plots showing distance between peak and pedestal
+https://www.jlab.org/accel/RadCon/opsgraphs/rich/webfit/archive/w3_2019/r_W0_GA0194_w3_g064_v1000_t227.60.txt.lin_11par.png
+where thresh hold is 227, pixel id 60
+
+gain map is at cfg/gain/
+it has gain_map_0.txt,gain_map_1.txt,gain_map_2.txt where pmt_id is used
+inside map file,  maroc id is used for line ordering
+
+Topward power supply provide +5V, current limit set at 1V which is larger than 800mV drawn by one board
+
+Be careful insert MAROC and PMT because they are hold by board edge which doesn't match well, FPGA board is quite loose
+
+If no deadtime, coda start with 2 junk events after "Go", 
+then add 1 more junk event after no more trigger, then add some other junk event after click "End run", total 4 or more junk events more than trigger
+If there is deadtime, coda records more events than trigger
+
+If FPGA pulser is running, start maroc daq with laser will stop it automatically
+
+fadc has 12 bit adc and 4ns sample time window, 50ohm
+It can be set at 0.5/1/2V via jumper for each channel from tp to bottom position
+at 0.5V, each adc channel has current 0.5/4096/50/1e-6=2.5uA and charge 0.5/4096/50*4e-9=10fC
+
+We choose 48 windows and 192ns total
+
+sum of 8 signal has cut off at 25mV, corresponding adc channel 25e-3/0.5*4096=205 above pedestal
+The cut off could be from driving the cable to FADC or before it
+If it's from driving the cable to FADC, add an 1x amp to buffer it on board could increase cut off by a factor of 2, but it may increase everything
+
+sum of 8 signal with 10x amp by NIM has cut off at 250mV, corresponding adc channel 250e-3/0.5*4096=2050 above pedestal
+
+NIM crate TTL->ECL converter 
+very bottom LEMO input match second to last pin output which should connect to TS#1 in crate with twisted wire and wire polarity switched
+
